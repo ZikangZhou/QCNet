@@ -42,5 +42,5 @@ if __name__ == '__main__':
     }[model.dataset](root=args.root, split='test')
     dataloader = DataLoader(test_dataset, batch_size=args.batch_size, shuffle=False, num_workers=args.num_workers,
                             pin_memory=args.pin_memory, persistent_workers=args.persistent_workers)
-    trainer = pl.Trainer.from_argparse_args(args)
+    trainer = pl.Trainer(accelerator=args.accelerator, devices=args.devices, strategy='ddp')
     trainer.test(model, dataloader)

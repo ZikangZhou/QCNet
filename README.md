@@ -23,9 +23,10 @@ This repository is the official implementation of the [CVPR 2023](https://cvpr20
 
 ## News
 
-[2023/6/29] The code for [Argoverse 2 marginal trajectory prediction](https://eval.ai/web/challenges/challenge-page/1719/leaderboard/4098) is released.  
-[2023/6/18] [QCNeXt](https://arxiv.org/abs/2306.10508), the extended version of QCNet, has won the championship of [Argoverse 2 Multi-Agent Motion Forecasting Challenge](https://www.argoverse.org/tasks.html) at [CVPR 2023 Workshop on Autonomous Driving (WAD)](https://cvpr2023.wad.vision/).  
-[2023/2/28] [QCNet](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhou_Query-Centric_Trajectory_Prediction_CVPR_2023_paper.pdf) is accepted by [CVPR 2023](https://cvpr2023.thecvf.com/).
+**[2023/07/04]** The [checkpoint]((https://drive.google.com/file/d/1OKBytt6N6BdRa9FWmS7F1-YvF0YectBv/view?usp=drive_link)) for [Argoverse 2 marginal prediction](https://eval.ai/web/challenges/challenge-page/1719/leaderboard/4098) is released. Give it a try!  
+**[2023/06/29]** The code for [Argoverse 2 marginal prediction](https://eval.ai/web/challenges/challenge-page/1719/leaderboard/4098) is released. Enjoy it:)    
+**[2023/06/18]** [QCNeXt](https://arxiv.org/abs/2306.10508), the extended version of QCNet, has won the championship of [Argoverse 2 Multi-Agent Motion Forecasting Challenge](https://www.argoverse.org/tasks.html) at [CVPR 2023 Workshop on Autonomous Driving (WAD)](https://cvpr2023.wad.vision/).  
+**[2023/02/28]** [QCNet](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhou_Query-Centric_Trajectory_Prediction_CVPR_2023_paper.pdf) is accepted by [CVPR 2023](https://cvpr2023.thecvf.com/).
 
 ## Highlights
 
@@ -85,14 +86,14 @@ Submit the generated `.parquet` file to the [Argoverse 2 leaderboard](https://ev
 
 ### Quantitative Results
 
-The checkpoint will be released in several days. Watch the update of this repository!
+| Model | Dataset | Split | Checkpoint | minFDE (K=6) | minFDE (K=1) | minADE (K=6) | minADE (K=1) | MR (K=6) | MR (K=1) | brier-minFDE (K=6) |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| QCNet | AV2 | Val | [QCNet_AV2](https://drive.google.com/file/d/1OKBytt6N6BdRa9FWmS7F1-YvF0YectBv/view?usp=drive_link) | 1.25 | 1.69 | 0.72 | 4.32 | 0.16 | 0.58 | 1.87 |
+| QCNet | AV2 | Test | [QCNet_AV2](https://drive.google.com/file/d/1OKBytt6N6BdRa9FWmS7F1-YvF0YectBv/view?usp=drive_link) |  |  |  |  |  |  |  |
 
-| Model | Dataset | Split | Checkpoint | Config | minFDE (K=6) | minFDE (K=1) | minADE (K=6) | minADE (K=1) | MR (K=6) | MR (K=1) | brier-minFDE (K=6) |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| QCNet | AV2 | Val |  |  |  |  |  |  |  |  |  |
-| QCNet | AV2 | Test |  |  |  |  |  |  |  |  |  |
+The performance is slightly better than that reported in the paper due to some incremental updates since I finished the paper:)
 
-The performance should be slightly better than that reported in the paper due to some incremental updates since I finished the paper:)
+It seems that the leaderboard doesn't allow for new submissions temporarily. If anyone can make a submission, please let me know about the performance on the test set.
 
 ### Qualitative Results
 
