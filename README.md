@@ -88,7 +88,7 @@ Submit the generated `.parquet` file to the [Argoverse 2 leaderboard](https://ev
 
 | Model | Dataset | Split | Checkpoint | minFDE (K=6) | minFDE (K=1) | minADE (K=6) | minADE (K=1) | MR (K=6) | MR (K=1) | brier-minFDE (K=6) |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| QCNet | AV2 | Val | [QCNet_AV2](https://drive.google.com/file/d/1OKBytt6N6BdRa9FWmS7F1-YvF0YectBv/view?usp=drive_link) | 1.25 | 1.69 | 0.72 | 4.32 | 0.16 | 0.58 | 1.87 |
+| QCNet | AV2 | Val | [QCNet_AV2](https://drive.google.com/file/d/1OKBytt6N6BdRa9FWmS7F1-YvF0YectBv/view?usp=drive_link) | 1.25 | 4.32 | 0.72 | 1.69 | 0.16 | 0.58 | 1.87 |
 | QCNet | AV2 | Test | [QCNet_AV2](https://drive.google.com/file/d/1OKBytt6N6BdRa9FWmS7F1-YvF0YectBv/view?usp=drive_link) | 1.24 | 4.31 | 0.64 | 1.70 | 0.15 | 0.58 | 1.86 |
 
 The performance is slightly better than that reported in the paper due to some incremental updates since I finished the paper:)
