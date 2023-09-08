@@ -155,7 +155,7 @@ class QCNetDecoder(nn.Module):
         mask_dst = data['agent']['predict_mask'].any(dim=-1, keepdim=True).repeat(1, self.num_modes)
 
         pos_t = data['agent']['position'][:, :self.num_historical_steps, :self.input_dim].reshape(-1, self.input_dim)
-        head_t = data['agent']['position'][:, :self.num_historical_steps].reshape(-1)
+        head_t = data['agent']['heading'][:, :self.num_historical_steps].reshape(-1)
         edge_index_t2m = bipartite_dense_to_sparse(mask_src.unsqueeze(2) & mask_dst[:, -1:].unsqueeze(1))
         rel_pos_t2m = pos_t[edge_index_t2m[0]] - pos_m[edge_index_t2m[1]]
         rel_head_t2m = wrap_angle(head_t[edge_index_t2m[0]] - head_m[edge_index_t2m[1]])
